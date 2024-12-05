@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="con">
+        <h1>Smart Login System</h1>
+        <input
+          class=""
+          type="text"
+          id="namesign"
+          placeholder="Enter your name"
+        />
+        <p class="alert alert-heading text-start text-danger d-none" id="nameAlert">Name must be characters, 3-20 character</p>
+        <input
+          class=""
+          type="email"
+          id="emailsign"
+          placeholder="Enter your email"
+        />
+        <p class="alert alert-heading text-start text-danger d-none" id="emailAlert">Email must have @ :: ex:...@gmail.com</p>
+
+        <input
+          type="password"
+          id="passsign"
+          placeholder="Enter your password"
+          class="mb-4"
+        />
+        <p class="alert alert-heading text-start text-danger d-none" id="passAlert">Password must be characters,numbers and sympols</p>
+
+        <p class="text-center text-danger d-none" id="Alert">
+          All inputs is required
+        </p>
+        <p class="text-center text-danger d-none" id="AlertEmail">
+          Email address already in use 
+        </p>
+        <p class="text-success p-2 d-none" id="Success">Success</p>
+        <a href=""><button id="signUpButton">Sign Up</button></a>
+        <a href="index.html"><button id="signInButton" class="d-none">Sign In</button></a>
+        <p class="mb-5">You have an account? <a href="index.html">Sign In</a></p>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/signup.js"></script>
+  </body>
+</html>
